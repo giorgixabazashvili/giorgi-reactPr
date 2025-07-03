@@ -16,7 +16,7 @@ import Error from "./component/Error";
 import { UsersLoader } from "./loader.js/loader";
 import { userDetailLoader } from "./loader.js/loader";
 import Tasks from "./component/Tasks";
-import { requireAuth } from "./loader.js/loader";
+// import { requireAuth } from "./loader.js/loader";
 import SignUp from "./component/SignUp";
 import Edit from "./component/Edit";
 
@@ -78,8 +78,6 @@ const router = createBrowserRouter(
         path="users/:id"
         element={<UserDetails />}
         loader={userDetailLoader}
-
-        // errorElement={<Error />}
       />
 
       <Route path="profile" element={<Profile />} />

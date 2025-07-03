@@ -2,8 +2,7 @@ import React from "react";
 import { useParams, useNavigate, useLoaderData } from "react-router-dom";
 import { deleteUser } from "../services/api/user";
 import { Link } from "react-router-dom";
-import { Await } from "react-router";
-
+import { Await } from "react-router-dom";
 function UserDetails() {
   const { id } = useParams();
   const navigation = useNavigate();

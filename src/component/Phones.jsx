@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { supabase } from "../supabase-client";
 import { Link } from "react-router-dom";
-import { Favitems } from "../context/Favcontext";
 
 function Phones() {
   const [ticket, setAddPhone] = useState({
@@ -208,6 +207,10 @@ function Phones() {
                       <span className="fw-bold"> ${ticket.price}</span>
                     </p>
                     <button
+                      onClick={() =>
+                        (window.location.href =
+                          "https://checkout.stripe.com/c/pay/cs_test_a1dAGrP47CcXtR0rvxI5qxr57RsxAm0NCC11fNE7i2AL5bssJmujLHGwO8")
+                      }
                       style={{
                         background:
                           "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",

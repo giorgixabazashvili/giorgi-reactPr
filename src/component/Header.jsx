@@ -21,7 +21,7 @@ export default function Header() {
             fontFamily: "'Montserrat', sans-serif",
           }}
         >
-          Ticket House
+          Ticket Housee
         </span>
       </div>
 
